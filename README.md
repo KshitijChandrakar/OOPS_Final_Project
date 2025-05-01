@@ -14,8 +14,6 @@ This project is a simple implementation of the classic Space Invaders game, but 
 ## Requirements for playing
 - Java Development Kit (JDK) 8 or higher
 - Maven
-- 
-3. **Open the project in your IDE.**
 
 ### Running the Game
 
@@ -40,7 +38,7 @@ This project is a simple implementation of the classic Space Invaders game, but 
    - **Audio/**: Contains the custom sounds used in game.
     - `SPACE INVADERS SHOOT - Gaming Sound Effects HD FREE NO Copyright.wav`
     **UnitTest/**: Contains tests for some classes.
-- *src/main/java/
+- **src/main/java/**
     - Game/**:Contains classes that makes the game .
       - **MainFrame.java**: The main frame that initializes the game (Main menu).
       - **MainMenuPanel.java**: The main menu panel with buttons to start the game, show the high score, show controls and quit the game. 
