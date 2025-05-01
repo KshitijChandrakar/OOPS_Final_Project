@@ -1,0 +1,9 @@
+for entry in ./*/*.java
+do
+  if [ -f "$entry" ];then
+    echo "**" "$entry" "**"
+    echo "\`\`\`\java"	
+    cat "$entry"
+    echo "\`\`\`"
+  fi
+done

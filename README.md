@@ -1,6 +1,7 @@
 # Space Invaders in Java
 
-This project is a simple implementation of the classic Space Invaders game, but in Java. It includes features such as player movement, shooting, alien movement, and a game over screen.
+## Introduction and Problem Statement
+This project is a simple implementation of the classic Space Invaders game, but in Java using Swing. It includes features such as player movement, shooting, alien movement, and a game over screen.
 
 ## Some features
 - Player movement (left and right)
@@ -62,7 +63,7 @@ This project is a simple implementation of the classic Space Invaders game, but 
     - **vendor/**:Contains not my code.
         - **BasicBlocks.java**:Represents houses on game screen(GamePanel).
 
-## Game Classes and Methods
+## Description of Game Classes
 
 ### Sprite Class
 
@@ -116,8 +117,6 @@ The `Shot` class represents a shot fired by the player.
 **Methods:**
 - `draw(Graphics2D g, int width, int height)`: Draws the shot on the screen.
 - `shooting(KeyHandler keyHandler, Player player, int shotSpeed)`: Updates the shot's position based on player input.
-
-### AlienShot Class
 
 The `AlienShot` class represents a shot fired by an alien. It extends the `Shot` class and adds specific methods.
 
@@ -179,6 +178,13 @@ The `AlienShot` class represents a shot fired by an alien. It extends the `Shot`
 - **View controls**: Click the "Controls" button in the main menu.
 - **Quit the game**: Click the "Quit" button in the main menu or on the game over screen.
 
+## Screenshots
+![Title Screen](/home/asus/content/Notes/Semester\ 4/Whoops/SpaceInvaders/TitleScreen.png "Title Screen")
+![Controls](/home/asus/content/Notes/Semester\ 4/Whoops/SpaceInvaders/Controls.png "Controls")
+![Game](/home/asus/content/Notes/Semester\ 4/Whoops/SpaceInvaders/Game.png "Space Invaders 1")
+![Game 1](/home/asus/content/Notes/Semester\ 4/Whoops/SpaceInvaders/Game1.png "Space Invaders 2")
+![Game Over](/home/asus/content/Notes/Semester\ 4/Whoops/SpaceInvaders/GameOver.png "Game Over")
+![High Score](/home/asus/content/Notes/Semester\ 4/Whoops/SpaceInvaders/HighScore.png "High Score")
 
 
 
