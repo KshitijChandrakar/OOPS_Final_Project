@@ -13,29 +13,17 @@ This project is a simple implementation of the classic Space Invaders game, but 
 
 ## Requirements for playing
 - Java Development Kit (JDK) 8 or higher
-- An IDE like IntelliJ IDEA, Eclipse, or NetBeans
-
-### Installation
-
-1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/ShrekEnjoyerAno/SpaceInvaders
-    ```
-
-2. **Navigate to the project directory:**
-    ```sh
-    cd space-invaders
-    ```
-
+- Maven
+- 
 3. **Open the project in your IDE.**
 
 ### Running the Game
 
 1. **Compile the code:**
-    - Create a project in your IDE to compile all Java files.
+    - Run `mvn compile` to compile it.
 
 2. **Run the main class:**
-    - Locate and run the `Main` class, which contains the declared MainFrame object.
+    - Execute the `run` file 
 
 ## Project Structure
 
@@ -52,28 +40,29 @@ This project is a simple implementation of the classic Space Invaders game, but 
    - **Audio/**: Contains the custom sounds used in game.
     - `SPACE INVADERS SHOOT - Gaming Sound Effects HD FREE NO Copyright.wav`
     **UnitTest/**: Contains tests for some classes.
-- **Game/**:Contains classes that makes the game .
-  - **MainFrame.java**: The main frame that initializes the game (Main menu).
-  - **MainMenuPanel.java**: The main menu panel with buttons to start the game, show the high score, show controls and quit the game. 
-  - **AlienShot.java**: Represents a shot fired by an alien. 
-  - **GameOver.java**: Frame displayed at the end of the game with options to return to the menu or quit. 
-  - **Sprite.java**: Base class for all moving objects in the game (aliens and player).
-  - **Player.java**: Represents the player's character.
-  - **Alien.java**: Represents an alien enemy.
-  - **Shot.java**: Represents a shot fired by the player.
-  - **GameOver.java** : Frame for game over.
-- **MainMenu/**:Contains menu buttons, panel, and frame. Here is Main class too.
-  - **HighScoreButton.java**: Button to display the high score from a text file.
-  - **PlayButton.java**: Button to start the game. 
-  - **OptionsButton.java**: Button to show the game controls. 
-  - **ExitButton.java**: Button to quit the game. 
-  - **MenuButton.java**: Base class for menu buttons.
-- **Handlers/**: Handlers for keyboard inputs, score writing and sound playing.
-  - **KeyHandler.java**: Handles keyboard input.
-  - **SoundManagers.java**: Handles sounds.
-  - **ScoreManager.java**: Writes scores to score.txt.
-- **vendor/**:Contains not my code.
-    - **BasicBlocks.java**:Represents houses on game screen(GamePanel).
+- *src/main/java/
+    - Game/**:Contains classes that makes the game .
+      - **MainFrame.java**: The main frame that initializes the game (Main menu).
+      - **MainMenuPanel.java**: The main menu panel with buttons to start the game, show the high score, show controls and quit the game. 
+      - **AlienShot.java**: Represents a shot fired by an alien. 
+      - **GameOver.java**: Frame displayed at the end of the game with options to return to the menu or quit. 
+      - **Sprite.java**: Base class for all moving objects in the game (aliens and player).
+      - **Player.java**: Represents the player's character.
+      - **Alien.java**: Represents an alien enemy.
+      - **Shot.java**: Represents a shot fired by the player.
+      - **GameOver.java** : Frame for game over.
+    - **MainMenu/**:Contains menu buttons, panel, and frame. Here is Main class too.
+      - **HighScoreButton.java**: Button to display the high score from a text file.
+      - **PlayButton.java**: Button to start the game. 
+      - **OptionsButton.java**: Button to show the game controls. 
+      - **ExitButton.java**: Button to quit the game. 
+      - **MenuButton.java**: Base class for menu buttons.
+    - **Handlers/**: Handlers for keyboard inputs, score writing and sound playing.
+      - **KeyHandler.java**: Handles keyboard input.
+      - **SoundManagers.java**: Handles sounds.
+      - **ScoreManager.java**: Writes scores to score.txt.
+    - **vendor/**:Contains not my code.
+        - **BasicBlocks.java**:Represents houses on game screen(GamePanel).
 
 ## Game Classes and Methods
 
@@ -185,7 +174,7 @@ The `AlienShot` class represents a shot fired by an alien. It extends the `Shot`
 
 ## Usage
 
-- **Start the game**: Run the `Main` class. In Game directory
+- **Start the game**: Compile and Run the `Run` File
 - **Move the player**: Use the left/right arrow keys or A and D keys to move the player.
 - **Shoot**: Press the spacebar to shoot.
 - **View high score**: Click the "High Score" button in the main menu.
