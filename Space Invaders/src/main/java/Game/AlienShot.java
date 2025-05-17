@@ -21,10 +21,10 @@ public class AlienShot {
 
     public void draw(Graphics2D g) {
         g.setColor(Color.RED);
-        g.fillRect(x, y, 5, 10);  // Example size of the alien shot
+        g.fillRect(x, y, 5, 10);
     }
 
     public Rectangle getBounds() {
-        return new Rectangle(x, y, 5, 10);  // Example size of the alien shot
+        return new Rectangle(x, y, 5, 10); 
     }
 }

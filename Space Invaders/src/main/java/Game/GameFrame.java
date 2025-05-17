@@ -16,10 +16,6 @@ public class GameFrame extends JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         gamePanel.startGameThread();
-        //if(gamePanel.isGameOver()){
-          //  this.dispose();
-       // }
-
     }
 
 }
